@@ -470,4 +470,69 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   left: 0;
 }
 
+.hero-section {
+  position: relative;
+}
+.hero-section .hero-socialLinks {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .hero-section .hero-socialLinks {
+    display: none;
+  }
+}
+.hero-section .hero-socialLinks .btns {
+  pointer-events: all;
+}
+.hero-section .hero-socialLinks .aFixx {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.hero-section .hero-socialLinks .aFixx:hover, .hero-section .hero-socialLinks .aFixx:focus {
+  color: white;
+}
+.hero-section .owl-carousel .item {
+  position: relative;
+}
+.hero-section .owl-carousel .txt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero-section .owl-carousel .txt .header {
+  font-family: "cairo-Bold";
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .hero-section .owl-carousel .txt .header {
+    font-size: 6vw;
+  }
+}
+.hero-section .owl-carousel .txt .info {
+  font-family: "cairo-SemiBold";
+  font-size: 25px;
+}
+@media only screen and (max-width: 992px) {
+  .hero-section .owl-carousel .txt .info {
+    font-size: 3vw;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

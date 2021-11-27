@@ -49,9 +49,9 @@ $(document).ready(function () {
 
 
   // owl get ready
-  // $(".hero-section .owl-carousel").owlCarousel({
-  //   items: 1,
-  //   rtl: true,
-  //   lazyLoad: true,
-  // });
+  $(".hero-section .owl-carousel").owlCarousel({
+    items: 1,
+    rtl: true,
+    lazyLoad: true,
+  });
 });
