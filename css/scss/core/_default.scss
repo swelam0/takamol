@@ -1,0 +1,60 @@
+body {
+  font-family: $rg-font;
+  font-size: 14px;
+}
+
+a,
+button,
+input,
+textarea {
+  background-color: unset;
+  text-decoration: none;
+  color: $secondary-color;
+  transition: all 0.5s ease;
+  display: flex;
+  border: 0;
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  @include hover {
+    outline: none !important;
+    color: $primary-color;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+button {
+  background-color: $primary-color;
+  color: white !important;
+
+  @include hover {
+    background-color: $hover-color;
+  }
+}
+
+h1 {
+  font-family: $bd-font;
+  font-size: 28px;
+}
+
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  transition: all 0.5s ease;
+}

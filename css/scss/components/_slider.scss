@@ -1,0 +1,47 @@
+.owl-carousel{
+
+  .owl-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .owl-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: rgba($secondary-color, $alpha: 0.5) !important;
+    
+    &.active{
+      background-color: rgba($primary-color, $alpha: 1.0) !important;
+    }
+
+    span{
+      display: none !important;
+    }
+  }
+}
+
+#carousel-custom-dots{
+  display: flex;
+  margin-top: 20px;
+
+  .owl-dot{
+   margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+   img{
+    max-height: 198px;
+    max-width: 198px;
+   }
+    
+
+   &:nth-last-child(1){
+     margin: 0;
+   }
+  }
+}

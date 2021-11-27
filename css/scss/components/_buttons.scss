@@ -1,0 +1,42 @@
+.aFixx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  min-height: 40px;
+  width: 100%;
+  transition: all 0.5s ease;
+
+  &.bk-color{
+    background-color: $primary-color;
+    color: white;
+    min-width: 112px;
+
+    @include hover{
+      background-color: $secondary-color;
+    }
+  }
+
+  &.mxw{
+    max-width: 160px;
+    margin: auto;
+    font-size: 16px;
+    font-family: $sbd-font;
+    margin-bottom: 30px;
+  }
+}
+
+.more-btn{
+  .aFixx{
+    width: 79px;
+    height: 35px;
+    font-size: 14px;
+    font-family: $sbd-font;
+    color: white;
+    background-color: $primary-color;
+
+    @include hover{
+      background-color: $secondary-color;
+    }
+  }
+}

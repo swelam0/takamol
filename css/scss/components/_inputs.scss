@@ -1,0 +1,67 @@
+.iFixx {
+  margin-bottom: 30px;
+  width: 100%;
+
+  label {
+    font-size: 16px;
+    font-family: $sbd-font;
+    margin-bottom: 15px;
+  }
+
+  input,
+  textarea {
+    height: 40px;
+    width: 100%;
+    font-family: $sbd-font;
+    color: $secondary-color;
+    background-color: white;
+    border: 1px solid $gray-color;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba($secondary-color, $alpha: 0.05);
+    padding: 0 20px;
+
+    margin-left: 20px;
+
+    &:nth-last-child(1) {
+      margin-left: 0;
+    }
+
+    @include hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  textarea {
+    padding: 20px;
+    height: 150px;
+  }
+}
+
+.iFixx-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  .iFixx {
+    width: calc(50% - 20px);
+    margin-bottom: unset;
+  }
+
+  @include media($tablet) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+
+    .iFixx {
+      width: 100%;
+
+      input {
+        margin-bottom: 30px;
+        margin-left: 0;
+      }
+    }
+  }
+}
