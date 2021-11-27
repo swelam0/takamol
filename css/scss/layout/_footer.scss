@@ -1,5 +1,4 @@
 footer {
-  background-color: $secondary-color;
   padding: 50px 0;
 
   .footer-flex {
@@ -36,13 +35,13 @@ footer {
     justify-content: flex-start;
 
     .aFixx {
-      color: white;
+      color: $secondary-color;
       justify-content: flex-start;
       margin-left: 26px;
       font-size: 20px;
 
       @include hover {
-        color: $primary-color;
+        color: $hover-color;
       }
     }
 
@@ -56,13 +55,29 @@ footer {
   .footer-links {
     .aFixx {
       justify-content: flex-start;
-      color: white;
+      color: $secondary-color;
       font-size: 16px;
       font-family: $sbd-font;
 
       @include hover {
-        color: $primary-color;
+        color: $hover-color;
       }
+    }
+  }
+
+  @include media($tablet) {
+    footer .footer-flex{
+      flex-wrap: wrap;
+    }
+
+    footer .footer-logo{
+      width: 100%;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+
+    footer .footer-logo .logoBtn{
+      justify-content: center;
     }
   }
 
