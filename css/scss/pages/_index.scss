@@ -68,3 +68,79 @@
     }
   }
 }
+
+.services-section {
+  position: relative;
+  margin-top: -60px;
+  z-index: 999;
+
+  .single-service {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 20px;
+    box-shadow: $shadow;
+
+    &:nth-child(1) {
+      background-color: $secondary-color;
+    }
+    &:nth-child(2) {
+      background-color: white;
+
+      img {
+        max-width: 70px;
+      }
+      .info {
+        .txt,
+        .aFixx {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .icon {
+    img {
+      max-width: 55px;
+      margin-left: 30px;
+    }
+  }
+
+  .info {
+    padding-top: 13px;
+    max-width: 340px;
+
+    .title {
+      font-size: 20px;
+      font-family: $bd-font;
+      color: $primary-color;
+    }
+
+    .txt {
+      color: white;
+      margin-top: 15px;
+    }
+
+    .more-btn .aFixx {
+      margin-right: auto;
+    }
+  }
+
+  @include media($phone) {
+    .flxx-section{
+      flex-wrap: wrap-reverse;
+    }
+
+    .single-service {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .icon img{
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+}

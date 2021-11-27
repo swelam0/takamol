@@ -52,6 +52,7 @@ $(document).ready(function () {
   $(".hero-section .owl-carousel").owlCarousel({
     items: 1,
     rtl: true,
+    dots: false,
     lazyLoad: true,
   });
 });

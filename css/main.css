@@ -33,7 +33,7 @@ input,
 textarea {
   background-color: unset;
   text-decoration: none;
-  color: #2B3C67;
+  color: #2b3c67;
   transition: all 0.5s ease;
   display: flex;
   border: 0;
@@ -49,18 +49,18 @@ input:focus,
 textarea:hover,
 textarea:focus {
   outline: none !important;
-  color: #F88125;
+  color: #f88125;
   text-decoration: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 button {
-  background-color: #F88125;
+  background-color: #f88125;
   color: white !important;
 }
 button:hover, button:focus {
-  background-color: #F88125;
+  background-color: #f88125;
 }
 
 h1 {
@@ -97,12 +97,12 @@ img {
   transition: all 0.5s ease;
 }
 .aFixx.bk-color {
-  background-color: #F88125;
+  background-color: #f88125;
   color: white;
   min-width: 112px;
 }
 .aFixx.bk-color:hover, .aFixx.bk-color:focus {
-  background-color: #2B3C67;
+  background-color: #2b3c67;
 }
 .aFixx.mxw {
   max-width: 160px;
@@ -115,13 +115,12 @@ img {
 .more-btn .aFixx {
   width: 79px;
   height: 35px;
-  font-size: 14px;
-  font-family: "cairo-SemiBold";
+  font-size: 12px;
   color: white;
-  background-color: #F88125;
+  text-decoration: underline;
 }
 .more-btn .aFixx:hover, .more-btn .aFixx:focus {
-  background-color: #2B3C67;
+  color: #f88125;
 }
 
 .iFixx {
@@ -138,9 +137,9 @@ img {
   height: 40px;
   width: 100%;
   font-family: "cairo-SemiBold";
-  color: #2B3C67;
+  color: #2b3c67;
   background-color: white;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(43, 60, 103, 0.05);
   padding: 0 20px;
@@ -153,8 +152,8 @@ img {
 .iFixx input:hover, .iFixx input:focus,
 .iFixx textarea:hover,
 .iFixx textarea:focus {
-  color: #F88125;
-  border-color: #F88125;
+  color: #f88125;
+  border-color: #f88125;
 }
 .iFixx textarea {
   padding: 20px;
@@ -225,6 +224,10 @@ img {
   margin: 0;
 }
 
+.flxx-section {
+  display: flex;
+}
+
 nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   z-index: 99;
@@ -252,12 +255,12 @@ nav {
   padding-left: unset;
 }
 .navbar .nav-links .aFixx {
-  color: #2B3C67;
+  color: #2b3c67;
   font-size: 16px;
   font-family: "cairo-SemiBold";
 }
 .navbar .nav-links .aFixx:hover, .navbar .nav-links .aFixx:focus {
-  color: #F88125;
+  color: #f88125;
 }
 .navbar .nav-buttons {
   display: none;
@@ -266,27 +269,27 @@ nav {
 }
 .navbar .nav-buttons .add-button {
   margin-left: 12px;
-  background-color: #2B3C67;
+  background-color: #2b3c67;
 }
 .navbar .nav-buttons .add-button:hover, .navbar .nav-buttons .add-button:focus {
   background-color: white;
-  color: #F88125;
+  color: #f88125;
 }
 .navbar .nav-buttons .user-button {
   color: white;
   cursor: pointer;
 }
 .navbar .nav-buttons .user-button:hover, .navbar .nav-buttons .user-button:focus {
-  color: #F88125;
+  color: #f88125;
 }
 .navbar .nav-buttons .bars-button {
   display: none;
   color: white;
   cursor: pointer;
-  color: #2B3C67;
+  color: #2b3c67;
 }
 .navbar .nav-buttons .bars-button:hover, .navbar .nav-buttons .bars-button:focus {
-  color: #F88125;
+  color: #f88125;
 }
 @media only screen and (max-width: 992px) {
   .navbar .nav-buttons {
@@ -309,7 +312,7 @@ nav {
     z-index: 999;
   }
   .navbar .nav-links .aFixx {
-    color: #2B3C67;
+    color: #2b3c67;
   }
   .navbar .nav-links.active {
     right: 0;
@@ -365,25 +368,25 @@ footer .footer-social {
   justify-content: flex-start;
 }
 footer .footer-social .aFixx {
-  color: #2B3C67;
+  color: #2b3c67;
   justify-content: flex-start;
   margin-left: 26px;
   font-size: 20px;
 }
 footer .footer-social .aFixx:hover, footer .footer-social .aFixx:focus {
-  color: #F88125;
+  color: #f88125;
 }
 footer .footer-social li:nth-last-child(1) .aFixx {
   margin: 0;
 }
 footer .footer-links .aFixx {
   justify-content: flex-start;
-  color: #2B3C67;
+  color: #2b3c67;
   font-size: 16px;
   font-family: "cairo-SemiBold";
 }
 footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
-  color: #F88125;
+  color: #f88125;
 }
 @media only screen and (max-width: 992px) {
   footer footer .footer-flex {
@@ -532,6 +535,67 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   .hero-section .owl-carousel .txt .info {
     font-size: 3vw;
     text-align: center;
+  }
+}
+
+.services-section {
+  position: relative;
+  margin-top: -60px;
+  z-index: 999;
+}
+.services-section .single-service {
+  display: flex;
+  width: 100%;
+  padding: 40px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.services-section .single-service:nth-child(1) {
+  background-color: #2b3c67;
+}
+.services-section .single-service:nth-child(2) {
+  background-color: white;
+}
+.services-section .single-service:nth-child(2) img {
+  max-width: 70px;
+}
+.services-section .single-service:nth-child(2) .info .txt,
+.services-section .single-service:nth-child(2) .info .aFixx {
+  color: #2b3c67;
+}
+.services-section .icon img {
+  max-width: 55px;
+  margin-left: 30px;
+}
+.services-section .info {
+  padding-top: 13px;
+  max-width: 340px;
+}
+.services-section .info .title {
+  font-size: 20px;
+  font-family: "cairo-Bold";
+  color: #f88125;
+}
+.services-section .info .txt {
+  color: white;
+  margin-top: 15px;
+}
+.services-section .info .more-btn .aFixx {
+  margin-right: auto;
+}
+@media only screen and (max-width: 480px) {
+  .services-section .flxx-section {
+    flex-wrap: wrap-reverse;
+  }
+  .services-section .single-service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .services-section .icon img {
+    margin: 0;
+    margin-bottom: 15px;
   }
 }
 
