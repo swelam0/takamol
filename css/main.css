@@ -357,6 +357,9 @@ nav {
   min-height: 70vh;
 }
 
+footer {
+  padding-bottom: 30px;
+}
 footer .footer-flex {
   display: flex;
   align-items: flex-start;
