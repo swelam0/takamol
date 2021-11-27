@@ -47,7 +47,6 @@ $(document).ready(function () {
   // side function call
   sidebar_function();
 
-
   // owl get ready
   $(".hero-section .owl-carousel").owlCarousel({
     items: 1,
@@ -56,21 +55,39 @@ $(document).ready(function () {
     lazyLoad: true,
   });
 
-  // owl get ready
   $(".blog-section .owl-carousel").owlCarousel({
     margin: 15,
     rtl: true,
     lazyLoad: true,
-    responsive:{
-      0:{
-          items:1
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:2
+      600: {
+        items: 2,
       },
-      1000:{
-          items:3
-      }
-  }
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
+  $(".clients-section .owl-carousel").owlCarousel({
+    margin: 15,
+    loop: true,
+    rtl: true,
+    lazyLoad: true,
+    autoWidth: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
   });
 });

@@ -196,3 +196,28 @@
     }
   }
 }
+
+.clients-section {
+  background-image: url("../images/clients.jpg");
+  padding: 1px;
+  padding-bottom: 40px;
+  margin: 30px 0;
+
+  .section-header .header {
+    color: white;
+    z-index: 99;
+  }
+
+  .owl-carousel {
+    .owl-dots {
+      margin-top: 30px !important;
+    }
+    .owl-dot {
+      background-color: white !important;
+
+      &.active{
+        background-color: $primary-color !important ;
+      }
+    }
+  }
+}
