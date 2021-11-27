@@ -33,9 +33,6 @@
       position: relative;
     }
 
-    .bk-img {
-    }
-
     .txt {
       position: absolute;
       top: 0;
@@ -127,7 +124,7 @@
   }
 
   @include media($phone) {
-    .flxx-section{
+    .flxx-section {
       flex-wrap: wrap-reverse;
     }
 
@@ -138,9 +135,64 @@
       margin-bottom: 10px;
     }
 
-    .icon img{
+    .icon img {
       margin: 0;
       margin-bottom: 15px;
+    }
+  }
+}
+
+.blog-section {
+  .single-blog {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .blog-title {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    padding: 6px 27px;
+    font-size: 19px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 8px;
+    z-index: 99;
+  }
+
+  .blog-img {
+    @include hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .blog-info {
+    .aFixx {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 76px;
+      background-color: $secondary-color;
+      color: white;
+      flex-direction: column;
+      padding: 25px 10px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-radius: 0;
+      text-align: right;
+      line-height: 30px;
+
+      span {
+        margin-top: 40px;
+      }
+
+      @include hover {
+        padding-top: 90px;
+        height: 100%;
+        opacity: 0.9;
+      }
     }
   }
 }

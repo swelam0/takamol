@@ -55,4 +55,22 @@ $(document).ready(function () {
     dots: false,
     lazyLoad: true,
   });
+
+  // owl get ready
+  $(".blog-section .owl-carousel").owlCarousel({
+    margin: 15,
+    rtl: true,
+    lazyLoad: true,
+    responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+  });
 });

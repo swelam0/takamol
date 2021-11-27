@@ -40,6 +40,7 @@ textarea {
   outline: none !important;
   -webkit-box-shadow: none;
   box-shadow: none;
+  transition: all 0.5s ease;
 }
 a:hover, a:focus,
 button:hover,
@@ -58,6 +59,7 @@ textarea:focus {
 button {
   background-color: #f88125;
   color: white !important;
+  transition: all 0.5s ease;
 }
 button:hover, button:focus {
   background-color: #f88125;
@@ -100,6 +102,7 @@ img {
   background-color: #f88125;
   color: white;
   min-width: 112px;
+  transition: all 0.5s ease;
 }
 .aFixx.bk-color:hover, .aFixx.bk-color:focus {
   background-color: #2b3c67;
@@ -118,6 +121,7 @@ img {
   font-size: 12px;
   color: white;
   text-decoration: underline;
+  transition: all 0.5s ease;
 }
 .more-btn .aFixx:hover, .more-btn .aFixx:focus {
   color: #f88125;
@@ -144,6 +148,7 @@ img {
   box-shadow: 0 3px 6px rgba(43, 60, 103, 0.05);
   padding: 0 20px;
   margin-left: 20px;
+  transition: all 0.5s ease;
 }
 .iFixx input:nth-last-child(1),
 .iFixx textarea:nth-last-child(1) {
@@ -228,6 +233,18 @@ img {
   display: flex;
 }
 
+.section-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+.section-header .header {
+  font-size: 30px;
+  font-family: "cairo-Bold";
+  color: #2b3c67;
+}
+
 nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   z-index: 99;
@@ -258,6 +275,7 @@ nav {
   color: #2b3c67;
   font-size: 16px;
   font-family: "cairo-SemiBold";
+  transition: all 0.5s ease;
 }
 .navbar .nav-links .aFixx:hover, .navbar .nav-links .aFixx:focus {
   color: #f88125;
@@ -270,6 +288,7 @@ nav {
 .navbar .nav-buttons .add-button {
   margin-left: 12px;
   background-color: #2b3c67;
+  transition: all 0.5s ease;
 }
 .navbar .nav-buttons .add-button:hover, .navbar .nav-buttons .add-button:focus {
   background-color: white;
@@ -278,6 +297,7 @@ nav {
 .navbar .nav-buttons .user-button {
   color: white;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .navbar .nav-buttons .user-button:hover, .navbar .nav-buttons .user-button:focus {
   color: #f88125;
@@ -287,6 +307,7 @@ nav {
   color: white;
   cursor: pointer;
   color: #2b3c67;
+  transition: all 0.5s ease;
 }
 .navbar .nav-buttons .bars-button:hover, .navbar .nav-buttons .bars-button:focus {
   color: #f88125;
@@ -372,6 +393,7 @@ footer .footer-social .aFixx {
   justify-content: flex-start;
   margin-left: 26px;
   font-size: 20px;
+  transition: all 0.5s ease;
 }
 footer .footer-social .aFixx:hover, footer .footer-social .aFixx:focus {
   color: #f88125;
@@ -384,6 +406,7 @@ footer .footer-links .aFixx {
   color: #2b3c67;
   font-size: 16px;
   font-family: "cairo-SemiBold";
+  transition: all 0.5s ease;
 }
 footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   color: #f88125;
@@ -498,6 +521,7 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   color: white;
   font-size: 20px;
   margin-bottom: 10px;
+  transition: all 0.5s ease;
 }
 .hero-section .hero-socialLinks .aFixx:hover, .hero-section .hero-socialLinks .aFixx:focus {
   color: white;
@@ -597,6 +621,54 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
     margin: 0;
     margin-bottom: 15px;
   }
+}
+
+.blog-section .single-blog {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.blog-section .blog-title {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  padding: 6px 27px;
+  font-size: 19px;
+  background-color: #f88125;
+  color: white;
+  border-radius: 8px;
+  z-index: 99;
+}
+.blog-section .blog-img {
+  transition: all 0.5s ease;
+}
+.blog-section .blog-img:hover, .blog-section .blog-img:focus {
+  transform: scale(1.1);
+}
+.blog-section .blog-info .aFixx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 76px;
+  background-color: #2b3c67;
+  color: white;
+  flex-direction: column;
+  padding: 25px 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 0;
+  text-align: right;
+  line-height: 30px;
+  transition: all 0.5s ease;
+}
+.blog-section .blog-info .aFixx span {
+  margin-top: 40px;
+}
+.blog-section .blog-info .aFixx:hover, .blog-section .blog-info .aFixx:focus {
+  padding-top: 90px;
+  height: 100%;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=main.css.map */
