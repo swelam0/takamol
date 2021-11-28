@@ -4,7 +4,7 @@
   .flxx-container {
     margin-bottom: 100px;
 
-    &:nth-last-child(1){
+    &:nth-last-child(1) {
       margin-bottom: 0;
     }
 
@@ -17,6 +17,7 @@
       }
     }
   }
+
   .img-side {
     width: 100%;
   }
@@ -31,12 +32,23 @@
       margin-bottom: 50px;
       color: $secondary-color;
     }
-    
+
     .txt {
       font-size: 16px;
       font-family: $bd-font;
       line-height: 30px;
       color: $secondary-color;
+    }
+  }
+
+  @include media($tablet){
+    .flxx-container{
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+
+    .img-side{
+      margin-bottom: 30px;
     }
   }
 }

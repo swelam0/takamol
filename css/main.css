@@ -142,16 +142,13 @@ img {
 }
 .iFixx input,
 .iFixx textarea {
-  height: 40px;
+  height: 50px;
   width: 100%;
-  font-family: "cairo-SemiBold";
-  color: #2b3c67;
-  background-color: white;
+  color: #3A3A3A;
+  background-color: #F2F2F2;
   border: 1px solid #eaeaea;
-  border-radius: 8px;
   box-shadow: 0 3px 6px rgba(43, 60, 103, 0.05);
   padding: 0 20px;
-  margin-left: 20px;
   transition: all 0.5s ease;
 }
 .iFixx input:nth-last-child(1),
@@ -732,6 +729,15 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   line-height: 30px;
   color: #2b3c67;
 }
+@media only screen and (max-width: 992px) {
+  .services-page .flxx-container {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  .services-page .img-side {
+    margin-bottom: 30px;
+  }
+}
 
 .about-page .img-side {
   width: 100%;
@@ -753,6 +759,36 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   line-height: 30px;
   color: #2b3c67;
   margin-bottom: 30px;
+}
+
+.contact-page {
+  padding: 70px 0;
+}
+.contact-page .form-side {
+  width: 100%;
+  padding-left: 30px;
+}
+.contact-page .form-side .aFixx {
+  background-color: #2b3c67;
+  width: 100px;
+  height: 50px;
+  border-radius: 0;
+  transition: all 0.5s ease;
+}
+.contact-page .form-side .aFixx:hover, .contact-page .form-side .aFixx:focus {
+  background-color: #f88125;
+}
+.contact-page .map-side {
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .contact-page .flxx-container {
+    flex-direction: column-reverse;
+  }
+  .contact-page .flxx-container .form-side {
+    padding: 0;
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
