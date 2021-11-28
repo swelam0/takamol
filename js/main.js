@@ -44,6 +44,17 @@ $(document).ready(function () {
   // add class side-nav to navbar
   addClassMedia(992, "#nav-links", "side-nav");
 
+  // nav bar scroll fuction
+  $(window).scroll(function () {
+    let scroll = $(window).scrollTop();
+
+    if (scroll >= 600) {
+      document.querySelector("nav").classList.add("scroll-style");
+    } else {
+      document.querySelector("nav").classList.remove("scroll-style");
+    }
+  });
+
   // side function call
   sidebar_function();
 

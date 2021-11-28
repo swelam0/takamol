@@ -250,6 +250,14 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   z-index: 99;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: white;
+}
+nav.scroll-style {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .navbar {
