@@ -89,6 +89,10 @@ img {
   transition: all 0.5s ease;
 }
 
+.flxx-container {
+  display: flex;
+}
+
 .aFixx {
   display: flex;
   align-items: center;
@@ -248,6 +252,7 @@ img {
 nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   z-index: 99;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .navbar {
@@ -690,6 +695,42 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
 }
 .clients-section .owl-carousel .owl-dot.active {
   background-color: #f88125 !important;
+}
+
+.services-page {
+  padding: 60px 0;
+}
+.services-page .flxx-container {
+  margin-bottom: 100px;
+}
+.services-page .flxx-container:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.services-page .flxx-container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.services-page .flxx-container:nth-child(odd) .txt-side {
+  padding-left: 30px;
+  padding-right: unset;
+}
+.services-page .img-side {
+  width: 100%;
+}
+.services-page .txt-side {
+  width: 100%;
+  padding-right: 30px;
+}
+.services-page .txt-side .header {
+  font-size: 30px;
+  font-family: "cairo-Bold";
+  margin-bottom: 50px;
+  color: #2b3c67;
+}
+.services-page .txt-side .txt {
+  font-size: 16px;
+  font-family: "cairo-Bold";
+  line-height: 30px;
+  color: #2b3c67;
 }
 
 /*# sourceMappingURL=main.css.map */

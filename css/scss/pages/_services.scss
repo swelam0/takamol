@@ -1,0 +1,42 @@
+.services-page {
+  padding: 60px 0;
+
+  .flxx-container {
+    margin-bottom: 100px;
+
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      .txt-side {
+        padding-left: 30px;
+        padding-right: unset;
+      }
+    }
+  }
+  .img-side {
+    width: 100%;
+  }
+
+  .txt-side {
+    width: 100%;
+    padding-right: 30px;
+
+    .header {
+      font-size: 30px;
+      font-family: $bd-font;
+      margin-bottom: 50px;
+      color: $secondary-color;
+    }
+    
+    .txt {
+      font-size: 16px;
+      font-family: $bd-font;
+      line-height: 30px;
+      color: $secondary-color;
+    }
+  }
+}
