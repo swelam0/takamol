@@ -733,4 +733,26 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   color: #2b3c67;
 }
 
+.about-page .img-side {
+  width: 100%;
+}
+.about-page .txt-side {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+.about-page .txt-side .header {
+  font-size: 30px;
+  font-family: "cairo-Bold";
+  margin-bottom: 50px;
+  color: #2b3c67;
+}
+.about-page .txt-side .txt {
+  font-size: 16px;
+  font-family: "cairo-Bold";
+  line-height: 30px;
+  color: #2b3c67;
+  margin-bottom: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
