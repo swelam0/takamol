@@ -257,7 +257,7 @@ nav.scroll-style {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .navbar {
@@ -499,7 +499,7 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   right: 0;
   left: 100%;
   bottom: 0;
-  z-index: 99;
+  z-index: 998;
   background-color: rgba(43, 60, 103, 0.8);
   transition: all 0.5s ease;
 }
@@ -514,7 +514,7 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  z-index: 999;
+  z-index: 99;
   pointer-events: none;
   top: 0;
   bottom: 0;
@@ -576,7 +576,7 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
 .services-section {
   position: relative;
   margin-top: -60px;
-  z-index: 999;
+  z-index: 99;
 }
 .services-section .single-service {
   display: flex;
@@ -744,6 +744,9 @@ footer .footer-links .aFixx:hover, footer .footer-links .aFixx:focus {
   }
   .services-page .img-side {
     margin-bottom: 30px;
+  }
+  .services-page .txt-side {
+    padding: 0 !important;
   }
 }
 

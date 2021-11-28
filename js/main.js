@@ -33,7 +33,7 @@ let sidebar_function = () => {
 
   // get close side nav btn ready
   closeNavBtn.classList.add("close-nav");
-  document.querySelector("body").appendChild(closeNavBtn);
+  document.querySelector("nav").appendChild(closeNavBtn);
   closeNavBtn.addEventListener("click", () => {
     usernav.classList.remove("active");
     closeNavBtn.classList.remove("active");
